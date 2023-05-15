@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module 'jquery'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module 'jquery'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(\n  '<p>Holberton Dashboard</p><p>Dashboard data for the students</p><p>Copyright - Holberton School</p>'\n).appendTo('body');\n\n\n//# sourceURL=webpack://task_0/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module 'jquery'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module 'jquery'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())('<p>Holberton Dashboard</p>').appendTo('body');\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module 'jquery'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())('<p>Dashboard data for the students</p>').appendTo('body');\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module 'jquery'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }())('<p>Copyright - Holberton School</p>').appendTo('body');\n\n\n//# sourceURL=webpack://task_0/./src/index.js?");
 
 /***/ })
 
