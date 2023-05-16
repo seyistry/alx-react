@@ -3,7 +3,7 @@ button {
 	font-weight: bold;
 }
 
-#logo::before {
+#logo {
 	width: 200px;
 	height: 200px;
 	background-image: url('../assets/holberton-logo.jpg');
