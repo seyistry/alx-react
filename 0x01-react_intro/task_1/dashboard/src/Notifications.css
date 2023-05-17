@@ -1,0 +1,11 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+.Notifications {
+  border: 1px solid #666666;
+  padding: 10px;
+}

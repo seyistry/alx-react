@@ -1,0 +1,64 @@
+:root {
+  --pry-color: #df354b;
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  vertical-align: middle;
+}
+
+.App-header {
+  color: var(--pry-color);
+  display: inline;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.App-body::before {
+  content: "";
+  display: block;
+  border: 2px solid var(--pry-color);
+  width: 99.7vw;
+
+  left: 0;
+  right: 0;
+}
+
+.App-body p {
+  padding: 40px 0 0 40px;
+}
+
+.App-body div  {
+  padding: 20px 0 0 40px;
+}
+
+.App-body div *  {
+  margin-right: 10px;
+}
+
+.App-footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  padding-bottom: 20px;
+  font-style: italic;
+
+  /* And if you want the div to be full-width: */
+  left: 0;
+  right: 0;
+}
+
+.App-footer::before {
+  content: "";
+  overflow: hidden;
+  display: block;
+  border: 2px solid var(--pry-color);
+  width: 100vw;
+  margin-bottom: 20px;
+}
