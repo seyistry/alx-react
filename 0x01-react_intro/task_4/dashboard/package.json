@@ -2,9 +2,7 @@
   "name": "dashboard",
   "version": "0.1.0",
   "private": true,
-  "repository": {
-    "url": "git+https://github.com/seyistry/alx-react.git"
-  },
+  "homepage": "https://seyistry.github.io/alx-react",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^12.1.4",
