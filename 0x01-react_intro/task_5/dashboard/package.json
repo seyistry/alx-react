@@ -14,7 +14,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack",
+    "dev": "webpack --config ./config/webpack.config.js",
     "build": "webpack",
     "start-dev": "webpack-dev-server --open"
   },
