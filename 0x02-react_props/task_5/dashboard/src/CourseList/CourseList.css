@@ -1,0 +1,20 @@
+/* * {
+	border: 1px solid red;
+} */
+table {
+  width: 95vw;
+  border: 1px solid rgb(236, 234, 234);
+  box-sizing: border-box;
+  margin: auto;
+}
+
+th:nth-child(1), th:nth-child(2)  {
+  text-align: left;
+  border-bottom: 2px solid rgb(236, 234, 234);
+}
+
+/* tbody {
+	border-top: 1px solid rgb(236, 234, 234);
+} */
+
+
