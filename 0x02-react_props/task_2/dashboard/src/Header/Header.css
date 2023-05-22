@@ -1,0 +1,12 @@
+img {
+  height: 200px;
+  width: 200px;
+  vertical-align: middle;
+}
+
+.App-header {
+  color: var(--pry-color);
+  display: inline;
+  font-size: 30px;
+  font-weight: bold;
+}

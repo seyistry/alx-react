@@ -1,0 +1,30 @@
+:root {
+  --pry-color: #df354b;
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+}
+
+.App-body::before {
+  content: "";
+  display: block;
+  border: 2px solid var(--pry-color);
+  width: 99.7vw;
+
+  left: 0;
+  right: 0;
+}
+
+.App-body p {
+  padding: 20px 0 20px 40px;
+}
+
+.App-body div  {
+  padding: 20px 0 0 40px;
+}
+
+.App-body div *  {
+  margin-right: 10px;
+}
