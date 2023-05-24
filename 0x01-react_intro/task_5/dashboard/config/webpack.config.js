@@ -8,11 +8,11 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, '../dist')
+    path: path.resolve(__dirname, '../dist'),
   },
   devServer: {
     static: {
-      directory: path.join(__dirname, '../dist')
+      directory: path.join(__dirname, '../dist'),
     },
     hot: true,
   },
@@ -20,17 +20,25 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
         use: [
           'file-loader',
           {
-            loader: 'image-webpack-loader'
-          }
-        ]
-      }
-    ]
+            loader: 'image-webpack-loader',
+          },
+        ],
+      },
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ["babel-loader"],
+      },
+    ],
+    resolve: {
+      extensions: ["*", ".js", ".jsx"],
+    },
   },
 };

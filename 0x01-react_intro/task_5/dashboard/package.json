@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "fs-promise": "^2.0.3"
+  },
   "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
     "file-loader": "^6.2.0",
     "image-webpack-loader": "^8.1.0",
@@ -15,7 +21,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --config ./config/webpack.config.js",
+    "dev": "webpack-dev-server --open --config ./config/webpack.config.js",
     "build": "webpack",
     "start-dev": "webpack-dev-server --open"
   },
