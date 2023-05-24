@@ -1,11 +1,10 @@
 import React from 'react';
 import './Notifications.css';
-import { getLatestNotification } from '../utils';
 import close from '../close-icon.png';
-import NotificationItem from './NotificationItem';
+import NotificationItemShape from './NotificationItemShape';
 
 function Notifications(props) {
-  const displayDrawer = false;
+  const displayDrawer = true;
   return (
     <>
       <div className="menuItem">Your notifications</div>
@@ -13,12 +12,7 @@ function Notifications(props) {
         <div className="Notifications">
           <p>Here is the list of notifications</p>
           <ul>
-            <NotificationItem type="default" value="New course available" />
-            <NotificationItem type="urgent" value="New resume available" />
-            <NotificationItem
-              type="urgent"
-              html={getLatestNotification()}
-            ></NotificationItem>
+            <NotificationItemShape {...props} />
           </ul>
           <button
             style={{
