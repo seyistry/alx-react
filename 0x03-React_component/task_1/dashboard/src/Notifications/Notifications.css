@@ -1,0 +1,36 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
+
+.menuItem {
+  position: absolute;
+  padding: 5px 0;
+  right: 20px;
+}
+
+.Notifications {
+  position: absolute;
+  border: 1px dotted var(--pry-color);
+  padding: 10px;
+  top: 30px;
+  right: 20px;
+}
+
+ul li {
+  margin-left: 40px;
+}
+[data-priority='default'] {
+  color: #220c67;
+}
+
+[data-priority='urgent'] {
+  color: red;
+}
+
+button img {
+  height: 20px;
+  width: 20px;
+}
