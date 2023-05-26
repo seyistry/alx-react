@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 import CourseList from './CourseList/CourseList';
 import { getLatestNotification } from './utils';
 
-class App extends React.component {
+class App extends React.Component {
   constructor() {
     super();
     this.isLoggedIn = true;
