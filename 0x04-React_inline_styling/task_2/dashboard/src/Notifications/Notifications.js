@@ -16,7 +16,7 @@ function Notifications(props) {
       {displayDrawer ? (
         <div className={css(styles.Notifications)}>
           <p>Here is the list of notifications</p>
-          <ul>
+          <ul className={css(styles.ul)}>
             <NotificationItemShape {...props} markAsRead={markAsRead} />
           </ul>
           <button
@@ -25,11 +25,18 @@ function Notifications(props) {
             onClick={() => {
               console.log('Close button has been clicked');
             }}
+            style={{ height: '20px', width: '20px', backgroundColor: '#EEE' }}
           >
             <img
               src={close}
               alt="close"
-              style={{ height: '20px', width: '20px' }}
+              style={{
+                position: 'absolute',
+                height: '15px',
+                width: '15px',
+                top: 2,
+                right: -5,
+              }}
             />
           </button>
         </div>
@@ -38,18 +45,57 @@ function Notifications(props) {
   );
 }
 
+const translateKeyframes = {
+  '0%': {
+    transform: 'translateY(0)',
+  },
+
+  '20%': {
+    transform: 'translateY(-5px)',
+  },
+
+  '40%': {
+    transform: 'translateY(5)',
+  },
+
+  '60%': {
+    transform: 'translateY(-5px)',
+  },
+
+  '80%': {
+    transform: 'translateY(5)',
+  },
+
+  '100%': {
+    transform: 'translateY(0)',
+  },
+};
+
+const opacityKeyframes = {
+  from: {
+    opacity: 0.5,
+  },
+
+  to: {
+    opacity: 1,
+  },
+};
+
 const styles = StyleSheet.create({
   menuItem: {
     position: 'absolute',
     padding: '5px 0',
     right: '20px',
+    animationName: [translateKeyframes, opacityKeyframes],
+    animationDuration: '.5s, .5s',
+    animationIterationCount: 'infinite',
   },
 
   btn: {
     position: 'absolute',
     top: '10px',
     right: '10px',
-    background: 'none',
+    // background: 'none',
     border: 'none',
   },
 
@@ -58,7 +104,23 @@ const styles = StyleSheet.create({
     border: '1px dotted #df354b',
     padding: '10px',
     top: '30px',
+    backgroundColor: 'white',
     right: '20px',
+    '@media (max-width: 900px)': {
+      width: '100%',
+      height: '100%',
+
+      fontSize: '20px',
+      padding: '0px',
+      top: '0px',
+      right: '0px',
+    },
+  },
+
+  ul: {
+    '@media (max-width: 900px)': {
+      paddingLeft: 0,
+    },
   },
 });
 

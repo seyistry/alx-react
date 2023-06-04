@@ -12,7 +12,7 @@ function BodySection(props) {
 
 const styles = StyleSheet.create({
   bodySection: {
-    padding: '20px 0 0 40px',
+    padding: '20px 40px 0 40px',
   },
 });
 

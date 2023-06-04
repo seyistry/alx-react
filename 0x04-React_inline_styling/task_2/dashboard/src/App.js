@@ -1,5 +1,4 @@
 import React from 'react';
-// import './App.css';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import Login from './Login/Login';
@@ -12,7 +11,7 @@ import BodySection from './BodySection/BodySection';
 import { StyleSheet, css } from 'aphrodite';
 
 function App() {
-  const isLoggedIn = true;
+  const isLoggedIn = false;
   const listCourses = [
     [1, 'ES6', 60],
     [2, 'Webpack', 20],
@@ -42,7 +41,19 @@ function App() {
             <Login />
           </BodySectionWithMarginBottom>
         )}
-        <BodySection title="News from the School">Hello News</BodySection>
+        <BodySection
+          title="News from the School"
+        >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
+          facere, libero itaque inventore soluta est doloribus vel nam culpa
+          voluptatibus. Repellendus, eligendi magni labore aspernatur facilis
+          voluptas quibusdam doloribus cupiditate. Aperiam, aliquam! Porro,
+          ipsum numquam! Maiores impedit est natus, asperiores tempore accusamus
+          dignissimos error odit aperiam laboriosam, unde nisi expedita adipisci
+          id necessitatibus beatae fugit velit aliquam voluptatibus corrupti
+          sunt. Labore vitae deleniti voluptatum incidunt ratione sunt dolorum
+          laborum.
+        </BodySection>
       </div>
       <Footer />
     </React.Fragment>
@@ -64,7 +75,7 @@ const styles = StyleSheet.create({
     },
   },
   pTag: {
-    margin: "0px",
+    margin: '0px',
     padding: '20px 0 0 40px',
   },
 });

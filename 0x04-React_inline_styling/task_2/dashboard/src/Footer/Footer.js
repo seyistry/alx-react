@@ -12,7 +12,10 @@ function Footer() {
 
 const style = StyleSheet.create({
   appFooter: {
-    position: 'fixed',
+    display: "flex",
+    flexDirection: "column",
+    height: "100px",
+    justifyContent: "flex-end",
     textAlign: 'center',
     bottom: 0,
     paddingBottom: '20px',
@@ -24,7 +27,6 @@ const style = StyleSheet.create({
       overflow: 'hidden',
       display: 'block',
       border: '2px solid #df354b',
-      width: '100vw',
       marginBottom: '20px',
     },
   },
