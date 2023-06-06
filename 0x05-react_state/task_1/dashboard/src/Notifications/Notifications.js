@@ -4,12 +4,6 @@ import NotificationItemShape from './NotificationItemShape';
 import { StyleSheet, css } from 'aphrodite';
 
 function Notifications(props) {
-  // const displayDrawer = true;
-
-  const markAsRead = (id) => {
-    console.log(`Notification ${id} has been marked as read`);
-  };
-
   return (
     <>
       <div
