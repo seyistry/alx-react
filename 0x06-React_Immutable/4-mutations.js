@@ -1,5 +1,5 @@
-// import { Map } from 'immutable';
-import { Map } from './node_modules/immutable/dist/immutable';
+import { Map } from 'immutable';
+// import { Map } from './node_modules/immutable/dist/immutable';
 
 export const map = Map({
   1: 'Liam',
