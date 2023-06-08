@@ -28,7 +28,7 @@ import { Seq } from 'immutable';
 
 function printBestStudents(obj) {
   Seq(obj).filter(function (key) {
-    if (key.score > 70) {
+    if (key.score < 70) {
       firstName = key.firstName;
       lastName = key.lastName;
       console.log(
