@@ -10,7 +10,4 @@ export const map = Map({
   6: 'Lucas',
 });
 
-export const map2 = map.set({
-  3: 'Benjamin',
-  5: 'Oliver',
-});
+export const map2 = map.set(2, 'Benjamin').set(4, 'Oliver');
