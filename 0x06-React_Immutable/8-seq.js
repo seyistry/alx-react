@@ -1,6 +1,6 @@
 import { Seq } from 'immutable';
 
-export function printBestStudents(obj) {
+export default function printBestStudents(obj) {
   const capitalize = (string) =>
     string.charAt(0).toUpperCase() + string.slice(1);
 
