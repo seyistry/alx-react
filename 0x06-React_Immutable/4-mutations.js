@@ -10,6 +10,6 @@ export const map = Map({
 });
 
 export const map2 = map.set({
-  3: 'Benjamin',
-  5: 'Oliver',
+  2: 'Benjamin',
+  4: 'Oliver',
 });
