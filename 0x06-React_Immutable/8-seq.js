@@ -1,6 +1,6 @@
 import { Seq } from 'immutable';
 
-function printBestStudents(obj) {
+export default function printBestStudents(obj) {
   const capFirstLetter = (string) =>
     string.charAt(0).toUpperCase() + string.slice(1);
 
