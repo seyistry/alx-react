@@ -1,14 +1,14 @@
 import { Seq } from 'immutable';
 
-export default function printBestStudents(obj) {
-  const capFirstLetter = (string) =>
+export function printBestStudents(obj) {
+  const capitalize = (string) =>
     string.charAt(0).toUpperCase() + string.slice(1);
 
-  const filtered = Seq(obj).filter((student) => {
-    if (student.score > 70) {
-      student.firstName = capFirstLetter(student.firstName);
-      student.lastName = capFirstLetter(student.lastName);
-      return student;
+  const filtered = Seq(obj).filter((item) => {
+    if (item.score > 70) {
+      item.firstName = capitalize(item.firstName);
+      item.lastName = capitalize(item.lastName);
+      return item;
     }
   });
 
