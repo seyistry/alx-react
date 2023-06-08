@@ -1,16 +1,17 @@
 import { Seq } from 'immutable';
+// const { Seq } = require('immutable');
 
-export default function printBestStudents(obj) {
-  return Seq(obj).filter(function (key) {
-    if (key.score > 70) {
-      firstName = key.firstName;
-      lastName = key.lastName;
-      console.log(
-        `${firstName.charAt(0).toUpperCase()}${firstName.slice(1)} ${lastName
-          .charAt(0)
-          .toUpperCase()}${lastName.slice(1)}`
-      );
-      return key;
+function printBestStudents(obj) {
+  const capFirstLetter = (string) =>
+    string.charAt(0).toUpperCase() + string.slice(1);
+
+  const filtered = Seq(obj).filter((student) => {
+    if (student.score > 70) {
+      student.firstName = capFirstLetter(student.firstName);
+      student.lastName = capFirstLetter(student.lastName);
+      return student;
     }
   });
+
+  console.log(filtered.toJS());
 }
