@@ -1,5 +1,4 @@
 import { Seq } from 'immutable';
-// const { Seq } = require('immutable');
 
 function printBestStudents(obj) {
   const capFirstLetter = (string) =>
